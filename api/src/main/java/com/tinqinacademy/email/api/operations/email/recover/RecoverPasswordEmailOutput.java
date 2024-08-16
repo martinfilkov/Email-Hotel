@@ -8,5 +8,5 @@ import lombok.*;
 @Setter
 @Builder
 @ToString
-public class RecoverPasswordOutput implements OperationOutput {
+public class RecoverPasswordEmailOutput implements OperationOutput {
 }

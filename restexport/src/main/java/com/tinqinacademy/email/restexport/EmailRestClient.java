@@ -2,8 +2,8 @@ package com.tinqinacademy.email.restexport;
 
 import com.tinqinacademy.email.api.operations.email.confirm.ConfirmEmailInput;
 import com.tinqinacademy.email.api.operations.email.confirm.ConfirmEmailOutput;
-import com.tinqinacademy.email.api.operations.email.recover.RecoverPasswordInput;
-import com.tinqinacademy.email.api.operations.email.recover.RecoverPasswordOutput;
+import com.tinqinacademy.email.api.operations.email.recover.RecoverPasswordEmailInput;
+import com.tinqinacademy.email.api.operations.email.recover.RecoverPasswordEmailOutput;
 import feign.Headers;
 import feign.RequestLine;
 
@@ -13,5 +13,5 @@ public interface EmailRestClient {
     ConfirmEmailOutput confirmEmail(ConfirmEmailInput request);
 
     @RequestLine("POST /api/email/recover")
-    RecoverPasswordOutput recoverPassword(RecoverPasswordInput request);
+    RecoverPasswordEmailOutput recoverPassword(RecoverPasswordEmailInput request);
 }

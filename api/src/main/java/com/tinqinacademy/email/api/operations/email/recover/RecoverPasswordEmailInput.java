@@ -10,7 +10,7 @@ import lombok.*;
 @Setter
 @Builder
 @ToString
-public class RecoverPasswordInput implements OperationInput {
+public class RecoverPasswordEmailInput implements OperationInput {
     @NotBlank(message = "Email to cannot be blank")
     private String emailTo;
 
